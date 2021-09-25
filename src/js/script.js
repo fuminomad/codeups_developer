@@ -49,6 +49,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-
+// topに戻るボタン
+const show = $(".mv").offset();
+ $('.l-footer__btn').hide();
+$(window).scroll(function() {
+if($(this).scrollTop() > show.top) {
+ $('.l-footer__btn').fadeIn();
+    } else {
+$('.l-footer__btn').fadeOut();
+    }
+});
+$('.l-footer__btn').click(function(){
+$('html, body').animate({scrollTop: 0}, 500);
+return false;
+});
 
 });

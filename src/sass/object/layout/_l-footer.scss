@@ -1,0 +1,138 @@
+.l-footer{
+padding: rem(48) 0;
+}
+.l-footer__inner{
+width: 100%; 
+max-width: rem(1280); 
+margin: 0 auto;  
+display: flex;  
+flex-direction: column;  
+align-items: center;
+padding-left: $padding-sp;
+padding-right: $padding-sp;
+@include mq(tab){
+   flex-direction: row; 
+   justify-content: space-between;
+  padding: 0 rem(32);
+  
+}
+}
+.l-footer__logo{
+   width: rem(70);
+   height: rem(30);
+   @include mq(tab){
+    padding-top: rem(5);   
+   }
+}
+.l-footer__menus{
+
+}
+.l-footer__menu{
+display: flex;
+flex-direction: column;
+align-items: center;
+@include mq(tab){
+    flex-direction: row; 
+    }
+}
+.l-footer__menu__list{
+color: $text-color;
+font-family: $font-family-base;
+font-size: $font-size-base;
+padding-top: rem(8);
+font-weight: $fw-regular;
+letter-spacing: rem(1.2);
+
+@include mq(tab){
+  padding-top: 0;  
+  padding-left: rem(32);
+  letter-spacing: rem(2);
+  line-height: rem(35);
+}
+a{
+   display: block;
+   position: relative;
+   cursor: pointer;
+   text-decoration: none;
+   &:before{
+     content: "";
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: rem(-5);
+     width: 100%;
+     height: rem(1);
+     background-color: $item-color;
+     transform: scale(0, 1); 
+     transform-origin: left; 
+     transition: transform .3s; 
+   }
+     &:hover:before {
+       transform: scale(1); 
+   }
+}
+}
+.l-footer__copylights{
+text-align: center;
+padding-top: rem(32);
+@include mq(tab){
+padding-top: rem(65);    
+}
+}
+.l-footer__copylight{
+font-size: rem(11);
+font-family:$font-family-base;
+font-weight: $fw-regular;
+@include mq(tab){
+ font-size: rem(15);   
+}
+}
+.l-footer__btn{
+    
+    position: fixed;
+    right: rem(30);
+    bottom: rem(40);
+    
+    a{
+    
+     width: rem(45); 
+    height: rem(45);
+    display: block;
+    background-color: $text-color;
+    text-decoration: none;
+    opacity: 1;
+    position: relative;
+    &:hover{
+        background-color: $btn-color; 
+        transition: all .3s; 
+    }
+    
+}
+}
+.l-footer__btn img{
+    padding: rem(16.5) rem(10.5);  
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	transition: .4s ease-in-out;
+    &:hover.l-footer__btn img:nth-of-type(2){
+     opacity: 0;   
+    }
+}
+.l-footer__btn__img:hover{
+    opacity: 0;   
+    
+}
+
+.mv{
+    height: 100vh;
+    background-color: red;
+}
+.news{
+    height: 1500px;
+    background-color: khaki
+    ;
+}
