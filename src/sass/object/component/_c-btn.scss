@@ -11,7 +11,8 @@
     color: $text-color;
     position: relative;
     transition: all .3s ease;
-    z-index: 1;
+    z-index: 2;
+    overflow: hidden;
     border: rem(1) solid $text-color;
     
     &:before{
@@ -24,9 +25,11 @@
       left: -100%;
       z-index: -1;
       transition: all .3s ease;
+      opacity: 0;
     }
     &:hover:before{
    left: 0;
+   opacity: 1;
     }
     &:hover{
       background: $btn-color; 
@@ -34,3 +37,4 @@
     
     }
 }
+

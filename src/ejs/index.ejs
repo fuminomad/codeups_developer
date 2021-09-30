@@ -7,9 +7,40 @@
       
     </section>
     <section class="news">
-      
+
     </section>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+    <section class="p-content">
+      <div class="p-content__wrapper">
+
+        <%- include('./parts/_c-title__contact',{title:'事業内容'}) %> 
+      <div class="p-content__images">
+      <div class="p-content__image"><a href="">経営理念ページへ</a></div>
+      <div class="p-content__image"><a href="">理念1へ</a></div>
+      <div class="p-content__image"><a href="">理念2へ</a></div>
+      <div class="p-content__image"><a href="">理念3へ</a></div>
+      </div>
+      </div>
+    </section>
+     <section class="p-contact">
+       <div class="l-inner">
+         <div class="p-contact__title">
+        <%- include('./parts/_c-title__contact',{title:'お問い合わせ'}) %> 
+          
+      </div>
+      
+      <div class="p-contact__text">
+        <%- include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+      </div>
+      <div class="p-contact__btn">
+        <%- include('./parts/_c-btn',{text:'お問い合わせへ', link:'#'}) %>
+        
+      </div>
+      
+      
+    </div>
+  </div>
+     </section>
+
     <%- include('./common/_footer') %>
 
 
