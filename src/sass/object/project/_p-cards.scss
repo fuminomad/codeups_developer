@@ -1,0 +1,10 @@
+.p-cards {
+
+
+  
+  @include mq("tab") {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

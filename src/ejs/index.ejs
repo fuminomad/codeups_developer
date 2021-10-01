@@ -2,6 +2,7 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
+
     <%- include('./common/_top-header') %>
     <section class="mv">
       
@@ -41,10 +42,48 @@
   </div>
      </section>
 
+    <!-- <%- include('./common/_top-header') %>
+      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+
     <%- include('./common/_footer') %>
 
 
    
+
+
+      <% let page = "<p>top </p>" %>
+      <p><%- page  %></p>
+      <p><%= page  %></p>
+
+
+      <% for (var i=0; i < 3; i++) { %>
+        <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+        <% } %>
+   -->
+
+
+
+   
+
+      <!-- ブログセクション byとっぷ -->
+      <section id="p-blog" class="section p-blog l-section">
+        <div class="p-blog__inner l-inner">
+          <h2 class="l-section__title p-blog__title">
+            <span>ブログ</span>
+          </h2>
+  
+          <div class="p-blog__items  p-cards">
+
+            <% for (var i=0; i < 3; i++) { %>
+              <%- include('./parts/_p-card',{count:i, link:'#'}) %>
+              <% } %>
+
+          </div>
+          <!--  p-blog-items終わり -->
+        </div>
+        <!--  p-blog-inner終わり -->
+        <!-- リンク用ボタン -->
+      </section>
 
 
 
